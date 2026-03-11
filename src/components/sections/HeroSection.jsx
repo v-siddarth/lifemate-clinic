@@ -59,7 +59,7 @@ export default function HeroSection() {
           <div className="absolute bottom-[20px] right-1/2 z-20 w-[90%] translate-x-1/2 rounded-2xl border border-[#9ed9fa] bg-[#def1ff] px-5 py-4 shadow-[0_10px_24px_rgba(0,0,0,0.06)] md:bottom-[30px] md:w-[380px] md:px-6 md:py-5 lg:bottom-[40px] lg:right-0 lg:translate-x-0">
             <span className="absolute left-4 top-[-24px] text-[74px] font-bold leading-none text-[#00a4f4]">“</span>
             <p className="text-[16px] leading-relaxed text-[#4f4f4f]">
-              \"Clear explanations and practical treatment guidance made my cardiac care journey easier.\"
+              "Clear explanations and practical treatment guidance made my cardiac care journey easier."
             </p>
           </div>
         </div>

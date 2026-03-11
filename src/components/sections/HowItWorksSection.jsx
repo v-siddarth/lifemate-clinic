@@ -15,7 +15,7 @@ export default function HowItWorksSection() {
   ];
 
   return (
-    <section className="bg-[#edf3f7] py-24">
+    <section id="how" className="bg-[#edf3f7] py-24">
       <div className="mx-auto max-w-[1320px] px-5 lg:px-6">
         <h3 className="text-center text-[36px] font-bold text-[#3d3d3d] md:text-[46px] lg:text-[56px]">How <span className="text-[#2cbeff]">our care process</span> works</h3>
         <p className="mx-auto mt-6 max-w-[900px] text-center text-[16px] leading-8 text-[#888888]">From first consultation to follow-up, Lifemate Clinic follows a structured clinical process to keep treatment clear, measurable, and patient-focused.</p>
