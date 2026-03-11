@@ -33,11 +33,23 @@ export default function TestimonialsSection() {
         <h3 className="text-center text-[36px] font-bold text-[#3d3d3d] md:text-[46px] lg:text-[56px]"><span className="text-[#0084d4]">Patient Feedback:</span><br />What visitors value at Lifemate Clinic</h3>
         <p className="mt-6 text-center text-[16px] text-[#888888]">Quality care is reflected in patient experience, consistency of follow-up, and trust in treatment planning.</p>
 
+        {/* <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-10"> */}
         <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-10">
           {testimonials.map((t, i) => (
             <article key={t.name} className="flex items-center gap-5 rounded-[24px] border-2 border-[#75d4ff] bg-[#f3f8fc] px-7 py-8">
               <img src={t.image} alt={t.name} className="h-16 w-16 rounded-xl object-cover md:h-20 md:w-20" />
-              <p className="text-[15px] leading-7 text-[#5d5d5d]">"{t.text}"<br /><span className="font-semibold text-[#3d3d3d]">- {t.name} {i + 1}</span></p>
+              <div>
+                <div className="flex items-center gap-2 text-[16px] font-semibold text-[#f4b400]">
+                  <div className="flex gap-1" aria-hidden="true">
+                    {Array.from({ length: 5 }).map((_, index) => (
+                      <span key={index}>★</span>
+                    ))}
+                  </div>
+                  <span className="text-[14px] text-[#3d3d3d]">5/5</span>
+                  <span className="sr-only">Rated 5 out of 5</span>
+                </div>
+                <p className="mt-2 text-[15px] leading-7 text-[#5d5d5d]">"{t.text}"<br /><span className="font-semibold text-[#3d3d3d]">- {t.name} {i + 1}</span></p>
+              </div>
             </article>
           ))}
         </div>

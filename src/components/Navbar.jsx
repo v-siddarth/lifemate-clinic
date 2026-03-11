@@ -22,6 +22,7 @@ function LogoMark() {
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const phoneHref = `tel:${clinicInfo.phonePrimary.replace(/\s+/g, "")}`;
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#dbe7ef] bg-[#edf3f7]/95 backdrop-blur">
@@ -58,10 +59,10 @@ export default function Navbar() {
         </ul>
 
         <a
-          href={`tel:${clinicInfo.phonePrimary.replace(/\s+/g, "")}`}
+          href={phoneHref}
           className="ml-auto hidden rounded-2xl bg-gradient-to-r from-[#7fd4ff] to-[#00a4f4] px-8 py-3 text-[17px] font-semibold leading-none text-white shadow-[0_16px_28px_rgba(0,164,244,0.24)] transition hover:brightness-95 lg:inline-flex"
         >
-          Contact us
+          Call {clinicInfo.phonePrimary}
         </a>
       </nav>
 
@@ -81,10 +82,10 @@ export default function Navbar() {
             ))}
           </ul>
           <a
-            href="#contact"
+            href={phoneHref}
             className="mt-3 inline-flex w-full items-center justify-center rounded-md bg-[#00a4f4] px-4 py-2.5 text-sm font-semibold text-white"
           >
-            Contact us
+            Call {clinicInfo.phonePrimary}
           </a>
         </div>
       ) : null}
